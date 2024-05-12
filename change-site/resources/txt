@@ -1,0 +1,1 @@
+while visiting any page, when inspectiong any social media buttons, <a href="index.php?page=redirect&amp;site=instagram" class="icon fa-instagram"></a>, instead of "site=instagram" we tried to put random things like "hello", and we got the flag
