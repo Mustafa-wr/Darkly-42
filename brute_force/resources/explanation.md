@@ -1,0 +1,2 @@
+Explanation
+On the login page, we performed a brute force attack using a script that tested the most common passwords. During this process, we successfully identified the correct password, "shadow," and obtained the flag.

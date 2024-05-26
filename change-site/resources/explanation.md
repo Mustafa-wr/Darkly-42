@@ -1,0 +1,2 @@
+Explanation
+While navigating through the website, we inspected the social media buttons and found an HTML element with the following structure: <a href="index.php?page=redirect&amp;site=instagram" class="icon fa-instagram"></a>. Instead of the parameter "site=instagram," we experimented by substituting it with arbitrary values such as "hello." This manipulation resulted in successfully obtaining the flag.
