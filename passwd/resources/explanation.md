@@ -1,0 +1,1 @@
+by using burp suit we tried to put ../etc/passwd as a path...there was nothing..we tried ../../etc/passwd, and we got a message, so we continue adding "../" to the path till we found the flag on ../../../../../../../etc/passwd

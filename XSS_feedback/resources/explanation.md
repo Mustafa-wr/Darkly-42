@@ -1,0 +1,1 @@
+in the feedback page, we used simple xss attack, like <script>alert(1)</script> and we got the flag

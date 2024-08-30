@@ -1,0 +1,1 @@
+in the login page, inspecting the elements, and in the form section "post methd" we changed the value of mail to random one, and we got the flag
