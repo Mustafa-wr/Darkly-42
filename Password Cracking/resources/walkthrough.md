@@ -64,15 +64,3 @@ How the Script Works:
 Password List: The script reads a list of 10,000 common passwords from a file named 10k.txt.
 Iteration: It then iterates through each password, using curl to submit the password to the login form.
 Flag Detection: If the response contains the word "flag," the script outputs the correct password and stops.
-
-
-
-### Adding the Script File:
-- Place your `10k.txt` file (if necessary) and the `script.sh` file in the `Resources/` folder.
-- If `10k.txt` is too large to include, simply reference it in your documentation, noting that it was a list of common passwords used for the brute force attack.
-
-### Final Steps:
-- Replace `B3A6E43DDF8B4BBB4125E5E7D23040433827759D4DE1C04EA63907479A80A6B2` with the actual flag you obtained.
-- Add any relevant screenshots or logs in the `screenshots/` folder and reference them in the "Evidence" section.
-
-This documentation now thoroughly explains the brute force attack process, the script used, its implications, and how such vulnerabilities can be mitigated. This ensures that your work is well-documented for evaluation.
