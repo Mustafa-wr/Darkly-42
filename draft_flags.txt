@@ -14,3 +14,7 @@ left:
 	upload images 
 	xss
 	robot.txt scapping
+
+
+
+Search the ssrf 
