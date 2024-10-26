@@ -43,9 +43,6 @@ SQL Injection vulnerabilities can have severe consequences, including:
   
 - **System Compromise:** In some cases, SQL Injection can be used to gain access to the underlying server, leading to a full system compromise.
 
-## Evidence
-*If you have any screenshots or logs showing the injection process or the retrieved data, include them here. Reference them like so:*
-![SQL Injection Evidence](screenshots/sql_injection_results.png)
 
 ## Mitigation
 To protect against SQL Injection vulnerabilities, consider implementing the following measures:

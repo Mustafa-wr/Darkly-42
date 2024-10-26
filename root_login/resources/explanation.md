@@ -10,7 +10,7 @@ In this challenge, we uncovered a vulnerability through directory traversal and 
      ```bash
      gobuster dir -u "http://localhost/" -w "./common.txt" -b 200
      ```
-   - This scan returned several paths, with the following notable entries:
+   - This scan returned several paths, with the following intersting pathes:
      ```
      /admin                (Status: 301) [--> http://10.18.225.159/admin/]
      /audio                (Status: 301) [--> http://10.18.225.159/audio/]
@@ -29,13 +29,13 @@ In this challenge, we uncovered a vulnerability through directory traversal and 
      ```plaintext
      root:437394baff5aa33daa618be47b75cb49
      ```
-   - The hashed value resembled an MD5 hash, prompting further investigation.
+   - The hashed value seems to be  MD5 hash.
 
 3. **Cracking the MD5 Hash:**
    - Using an MD5 decryption tool ([MD5 Decrypt](https://md5decrypt.net/en/)), we decrypted `437394baff5aa33daa618be47b75cb49`, which yielded the password `qwerty123@`.
 
 4. **Accessing the Admin Panel:**
-   - Returning to the `/admin` login page, we attempted multiple usernames with the password `qwerty123@`.
+   - Returning to the `/admin` login page, we tried multiple usernames with the password `qwerty123@`.
    - The credentials `root:qwerty123@` successfully bypassed the authentication, granting us access to the admin area.
 
 ## Flag
@@ -49,8 +49,6 @@ Directory traversal and weak authentication controls can lead to:
 - **Credential Exposure:** Poor password management allows attackers to decode hashes and escalate access privileges.
 - **Data Exfiltration:** Attackers can obtain sensitive information, such as hashed passwords and confidential resources.
 
-## Evidence
-*If available, include screenshots or logs showcasing the directory listing results, MD5 decryption output, and successful login.*
 
 ## Mitigation
 To prevent vulnerabilities of this nature:
@@ -60,7 +58,7 @@ To prevent vulnerabilities of this nature:
 - **Authentication Controls:** Implement multi-factor authentication and rate limiting to protect against unauthorized access.
 - **Regular Audits:** Conduct security audits and penetration testing to uncover and address potential weaknesses.
 
-## Payloads and Tools Used
+## Tools Used
 ### Gobuster Command
 ```bash
 gobuster dir -u "http://localhost/" -w "./common.txt" -b 200
