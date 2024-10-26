@@ -1,4 +1,4 @@
-# Exploitation of the BornToSec Button
+# Improper Access Control: Header Manipulation Referrer
 
 ## Description
 This vulnerability involved redirecting from the website's "BornToSec" button to the Albatros page, where hidden comments provided critical information for exploitation. The comments indicated specific requirements for the request, including a referral URL and a user-agent string.

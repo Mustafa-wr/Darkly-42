@@ -1,4 +1,4 @@
-# Exploitation of Hidden Directory
+# Security Misconfiguration
 
 ## Description
 During our enumeration process, we used the `gobuster` tool to discover hidden directories on the server. One of the findings was a hidden folder named `/.hidden`, which contained numerous links to other folders, each leading to more directories.

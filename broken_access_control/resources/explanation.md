@@ -1,4 +1,4 @@
-# Password Reset Exploitation
+# Broken Authentication
 
 ## Description
 This vulnerability involved exploiting the "Forgot Password" functionality to retrieve the flag by manipulating the email address sent in the request. Initially, the password reset form accepted an email input that could be modified to test the system's response.

@@ -1,5 +1,5 @@
-Explanation
-# Cookie Manipulation
+
+# Insecure Direct Object References (IDOR): Cookie manipulation
 
 ## Description
 This vulnerability involved manipulating the value of an admin cookie to gain unauthorized access and retrieve the flag. The website initially provided an MD5 hashed cookie value of "68934a3e9455fa72420237eb05902327," which, when decoded, translates to "false."
