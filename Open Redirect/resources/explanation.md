@@ -39,5 +39,4 @@ To prevent open redirect vulnerabilities, consider the following strategies:
   
 - **Whitelist Validation:** Implement strict validation for redirect parameters, ensuring they match only a predefined set of allowed URLs or paths.
 
-
 - **Regular Expression Validation:** Validate the input using regular expressions to ensure it conforms to expected patterns 

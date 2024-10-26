@@ -59,8 +59,18 @@ for i in "${password_array[@]}"; do
 done
 ```
 
+   ```
+   -d  '' means "don't stop until end of input" 
+   -r  Won't treat \ as special character
+   -a   "read into array"
+   ```
 How the Script Works:
 
 Password List: The script reads a list of 10,000 common passwords from a file named 10k.txt.
 Iteration: It then iterates through each password, using curl to submit the password to the login form.
 Flag Detection: If the response contains the word "flag," the script outputs the correct password and stops.
+
+
+
+IFS determines how Bash recognizes word boundaries while splitting a sequence of character strings.
+ref: https://www.baeldung.com/linux/ifs-shell-variable

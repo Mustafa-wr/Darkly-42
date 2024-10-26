@@ -30,7 +30,7 @@ This vulnerability involved redirecting from the website's "BornToSec" button to
    - After making the changes, we forwarded the modified request. This successfully triggered the conditions specified in the comments, and we received the flag.
 
 ## Impact
-This type of vulnerability can have several implications, including:
+This type of vulnerability can have several vulnerabilities, including:
 
 - **Access Control Bypass:** Attackers could exploit this vulnerability to gain unauthorized access to restricted pages or data by manipulating request headers.
 
@@ -44,3 +44,5 @@ This type of vulnerability can have several implications, including:
 2. **Security Best Practices:** Follow security best practices for web applications, including the use of tokens or session management to validate user access.
 
 3. **Regular Security Audits:** Conduct regular security audits and code reviews to identify and remediate vulnerabilities that could be exploited through header manipulation.
+
+4. **framework-specific protections:** web frameworks usually have built-in protections against header injection. Ensure using these features correctly.

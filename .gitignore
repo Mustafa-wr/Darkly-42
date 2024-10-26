@@ -1,0 +1,4 @@
+venv
+env
+hidden_files/resources/env
+*.log

